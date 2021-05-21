@@ -182,69 +182,74 @@ nav ul li a:hover {
     display         : flex;
     align-items     : center;
     flex-direction  : column;
+}
 
-    @media (max-width:550px) {
-        #home {
-            display         : flex;
-            height          : 100vh;
-            align-items     : center;
-            align-content   : center;
-            justify-content : center;
-            background-image: url(books.jpeg);
-        }
+#contact form{
+    display: flex;
+    flex-direction: column;
+}
 
-        header {
-            background-color: #bc6c25;
-            display         : flex;
-            flex-direction  : row;
-            justify-content : center;
-            height          : auto;
+@media (max-width:550px) {
+    #home {
+        display         : flex;
+        height          : 100vh;
+        align-items     : center;
+        align-content   : center;
+        justify-content : center;
+        background-image: url(books.jpeg);
+    }
 
-        }
+    header {
+        background-color: #bc6c25;
+        display         : flex;
+        flex-direction  : row;
+        justify-content : center;
+        height          : auto;
+
+    }
 
 
-        nav ul {
-            list-style-type: none;
-            display        : flex;
-            flex-direction : column;
-            font-size      : 20px;
-            text-align     : center;
-        }
+    nav ul {
+        list-style-type: none;
+        display        : flex;
+        flex-direction : column;
+        font-size      : 20px;
+        text-align     : center;
+    }
 
-        nav ul li {
-            margin: 10px;
-        }
+    nav ul li {
+        margin: 10px;
+    }
 
-        .bio {
+    .bio {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        padding       : 20px 10px;
+        margin        : 10px 10px 30px 10px;
+        border-radius : 10px;
+        max-width     : 100vw;
+    }
+
+    #menu {
+        display        : flex;
+        flex-direction : column;
+        width          : 100vw;
+        align-items    : center;
+        justify-content: space-evenly;
+    }
+
+    .service {
+        width         : 80%;
+        display       : flex;
+        flex-direction: column;
+
+    }
+
+    @media (min-width:1000px) {
+        #bios {
             display       : flex;
-            flex-direction: column;
-            align-items   : center;
-            padding       : 20px 10px;
-            margin        : 10px 10px 30px 10px;
-            border-radius : 10px;
-            max-width     : 100vw;
-        }
-
-        #menu {
-            display        : flex;
-            flex-direction : column;
-            width          : 100vw;
-            align-items    : center;
-            justify-content: space-evenly;
-        }
-
-        .service {
-            width         : 80%;
-            display       : flex;
-            flex-direction: column;
-
-        }
-
-        @media (min-width:1000px) {
-            #bios {
-                display       : flex;
-                flex-direction: row;
-            }
+            flex-direction: row;
         }
     }
 }
