@@ -1,6 +1,5 @@
 body {
     margin          : 0;
-    padding         : 0;
     background-color: #bc6c25;
     color           : #283618;
     font-family     : 'Merriweather', serif;
@@ -34,13 +33,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #dda15e;
+    background-color: #606c38;
 }
 
 
 #home {
     display         : flex;
     height          : 100vh;
+    width           : 100vw;
     align-items     : center;
     align-content   : center;
     justify-content : center;
@@ -55,7 +55,7 @@ nav ul li a:hover {
     margin-bottom   : 80px;
     background-color: #fefae0;
     padding         : 30px;
-    border-radius   : 10px;
+    border-radius: 10px;
 }
 
 #tagline h1 {
@@ -153,6 +153,7 @@ nav ul li a:hover {
     width         : 40%;
     display       : flex;
     flex-direction: column;
+    margin-bottom : 20px;
 }
 
 #menu h3 {
@@ -194,40 +195,53 @@ nav ul li a:hover {
 }
 
 #contact form {
-    display       : flex;
-    flex-direction: column;
-    min-width     : 400px;
+    display        : flex;
+    flex-direction : row;
+    max-width      : 400px;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    margin-bottom  : 20px;
 
 }
 
 #first-name {
     background-color: #283618;
-    width: 40%;
-    display: inline;
+    width           : 40%;
 }
 
 #last-name {
     background-color: #283618;
-    width: 40%;
-    display: inline;
+    width           : 40%;
 }
 
-#contact form input {
-    font-family: merriweather, serif;
-    margin     : 10px 0;
+#email {
+    width: 90%;
+}
+
+#contact .contact-input {
+    font-family     : merriweather, serif;
     background-color: #fefae0;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
+    border          : none;
+    padding         : 5px;
+    margin          : 5px;
+    border-radius   : 5px;
 }
 
 #contact form textarea {
-    font-family: merriweather, serif;
-    margin     : 10px 0;
+    font-family     : merriweather, serif;
+    width           : 90%;
     background-color: #fefae0;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
+    border          : none;
+    border-radius   : 5px;
+}
+
+#contact #submit {
+    display         : flex;
+    transition      : 300ms;
+}
+
+#contact #submit:hover {
+    background-color: #606c38;
 }
 
 @media (max-width:550px) {
@@ -238,6 +252,10 @@ nav ul li a:hover {
         align-content   : center;
         justify-content : center;
         background-image: url(books.jpeg);
+    }
+
+    #tagline {
+        border-radius: 0;
     }
 
     header {
