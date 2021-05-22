@@ -184,9 +184,50 @@ nav ul li a:hover {
     flex-direction  : column;
 }
 
-#contact form{
-    display: flex;
+#contact h2 {
+    text-align      : center;
+    width           : fit-content;
+    font-size       : 40px;
+    padding         : 10px;
+    border-radius   : 10px;
+    background-color: #fefae0;
+}
+
+#contact form {
+    display       : flex;
     flex-direction: column;
+    min-width     : 400px;
+
+}
+
+#first-name {
+    background-color: #283618;
+    width: 40%;
+    display: inline;
+}
+
+#last-name {
+    background-color: #283618;
+    width: 40%;
+    display: inline;
+}
+
+#contact form input {
+    font-family: merriweather, serif;
+    margin     : 10px 0;
+    background-color: #fefae0;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    font-family: merriweather, serif;
+    margin     : 10px 0;
+    background-color: #fefae0;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 @media (max-width:550px) {
