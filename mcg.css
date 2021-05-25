@@ -342,8 +342,13 @@ footer {
         width         : 80%;
         display       : flex;
         flex-direction: column;
-
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 @media (min-width:1000px) {
