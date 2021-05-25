@@ -22,7 +22,7 @@ header div p {
     font-weight : 700;
     font-size   : 20px;
     text-align  : center;
-    max-width   : min-content;
+    width   : 200px;
 }
 
 nav ul {
@@ -267,6 +267,10 @@ footer {
 }
 
 @media (max-width:550px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
     #splash {
         display        : flex;
         flex-direction : column;
