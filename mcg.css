@@ -138,7 +138,6 @@ nav ul li a:hover {
     font-size       : 40px;
     padding         : 10px;
     border-radius   : 10px;
-    background-color: #dda15e;
 
 }
 
@@ -242,6 +241,12 @@ nav ul li a:hover {
 
 #contact #submit:hover {
     background-color: #606c38;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
 }
 
 @media (max-width:550px) {
