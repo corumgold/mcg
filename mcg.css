@@ -45,7 +45,7 @@ nav ul li a:hover {
     align-content      : center;
     justify-content    : center;
     align-self         : center;
-    background-image   : url(barry-teaching.jpeg);
+    background-image   : url(books.jpeg);
     background-repeat  : no-repeat;
     background-position: center;
 }
@@ -56,7 +56,7 @@ nav ul li a:hover {
     text-align       : center;
     max-width        : 400px;
     margin-bottom    : 80px;
-    background-color : rgb(254, 250, 224, .5);
+    background-color : rgb(254, 250, 224, 1);
     padding          : 30px;
     border-radius    : 10px;
     background-repeat: space;
@@ -260,7 +260,6 @@ footer {
         align-items     : center;
         align-content   : center;
         justify-content : center;
-        background-image: url(barry-teaching.jpeg);
     }
 
     #tagline {
