@@ -166,6 +166,14 @@ nav ul li a:hover {
     border-radius   : 10px;
 }
 
+#menu h3:after {
+    content: '';
+    background: red;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
 #family-law {
 
     aspect-ratio    : 1/1;
@@ -269,11 +277,19 @@ footer {
 
     header {
         background-color: #bc6c25;
-        display         : flex;
+        display         : flex; 
         flex-direction  : row;
         justify-content : center;
         height          : auto;
 
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.is-open {
+        display: block;
     }
 
 
